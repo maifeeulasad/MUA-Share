@@ -9,8 +9,9 @@ Android 2 Android
 
 Using TCP/IP protocol.
 
-#Here is some snaps:
+Here is some snaps:
 
-#PC:
+PC:
 
 Landing window :
+![landing window](https://raw.githubusercontent.com/maifeeulasad/MUA-Share/master/SS/MainWindow.PNG)
