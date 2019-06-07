@@ -23,6 +23,32 @@ namespace MUA_Share
         public MainWindow()
         {
             InitializeComponent();
+
+
+        }
+
+        private void SendB_Click(object sender, RoutedEventArgs e)
+        {
+            Util.CreateServerClient(ipTB, pnTB);
+            Send send = new Send();
+            send.Show();
+            this.Close();
+        }
+
+        private void RecieveB_Click(object sender, RoutedEventArgs e)
+        {
+
+            Util.CreateServerClient(ipTB, pnTB);
+            Recieve recieve = new Recieve();
+            recieve.Show();
+            this.Close();
+        }
+
+        private void StopB_Click(object sender, RoutedEventArgs e)
+        {
+
+            Util.StopServerClient();
+
         }
     }
 }

@@ -7,9 +7,25 @@
         mc:Ignorable="d"
 		ResizeMode="NoResize"
         Title="MUA-Share" 
-		Height="450"
-		Width="800">
+		Height="320"
+		Width="200">
     <Grid>
-        
-    </Grid>
+
+		<StackPanel Orientation="Vertical" Background="#99ff99">
+
+			<TextBlock Text="IP Address:" TextAlignment="Center"  Margin="0 15 0 0"></TextBlock>
+			<TextBox TextAlignment="Center" Name="ipTB"></TextBox>
+
+			<TextBlock Text="Port Number:" TextAlignment="Center" Margin="0 10 0 0"></TextBlock>
+			<TextBox TextAlignment="Center" Name="pnTB"></TextBox>
+
+			<Button Click="SendB_Click" Name="sendB" Content="Send" Foreground="Blue" Background="Transparent" Margin="0 20 0 0"></Button>
+			<Button Click="RecieveB_Click" Name="recieveB" Content="Recieve" Foreground="Blue" Background="Transparent" Margin="0 10 0 0"></Button>
+			<Button Click="StopB_Click" Name="stopB" Content="Force Stop" Foreground="Red" Background="Transparent" Margin="0 10 0 0"></Button>
+
+			<TextBlock Text="Send files using TCP/IP protocol" TextAlignment="Center" Margin="0 20 0 0"></TextBlock>
+			<TextBlock Text="Developed by Maifee Ul Asad" TextAlignment="Center"></TextBlock>
+
+		</StackPanel>
+	</Grid>
 </Window>
