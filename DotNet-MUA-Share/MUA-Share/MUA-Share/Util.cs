@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace MUA_Share
         public static void CreateServerClient(TextBox ip,TextBox port)
         {
             new ServerClient(ip.Text, port.Text);
+            Directory.CreateDirectory(recieveLocation);
         }
 
         public static void StopServerClient()
