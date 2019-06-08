@@ -13,12 +13,7 @@
 
 		<StackPanel Orientation="Vertical" Background="#99ff99">
 
-			<Button>
-				<StackPanel>
-					<Image Source="img/back.png" />
-				</StackPanel>
-
-			</Button>
+			<Button Margin="10 5 10 0" Content="Back"></Button>
 		</StackPanel>
 	</Grid>
 </Window>
