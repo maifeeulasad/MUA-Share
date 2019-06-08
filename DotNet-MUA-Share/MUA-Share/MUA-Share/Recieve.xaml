@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MUA_Share"
         mc:Ignorable="d"
-        Title="Recieve" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+		ResizeMode="NoResize"
+        Title="MUA-Share Recieve" 
+		Height="320"
+		Width="200">
+	<Grid>
+
+		<StackPanel Orientation="Vertical" Background="#99ff99">
+
+			<TextBlock Text="IP Address:" TextAlignment="Center"  Margin="0 15 0 0"></TextBlock>
+			<TextBox TextAlignment="Center" Name="ipTB" Margin="5 0 5 0" TextChanged="IpTB_TextChanged"></TextBox>
+
+			<TextBlock Text="Port Number:" TextAlignment="Center" Margin="0 10 0 0"></TextBlock>
+			<TextBox TextAlignment="Center" Name="pnTB" Margin="5 0 5 0" TextChanged="PnTB_TextChanged"></TextBox>
+
+			<Button Click="SendB_Click" Name="sendB" Content="Send" Foreground="Blue" Background="Transparent" Margin="5 20 5 0"></Button>
+			<Button Click="RecieveB_Click" Name="recieveB" Content="Recieve" Foreground="Blue" Background="Transparent" Margin="5 10 5 0"></Button>
+			<Button Click="StopB_Click" Name="stopB" Content="Force Stop" Foreground="Red" Background="Transparent" Margin="5 10 5 0"></Button>
+
+			<TextBlock Text="Send files using TCP/IP protocol" TextAlignment="Center" Margin="0 20 0 0"></TextBlock>
+			<TextBlock Text="Developed by Maifee Ul Asad" TextAlignment="Center"></TextBlock>
+
+		</StackPanel>
+	</Grid>
 </Window>
