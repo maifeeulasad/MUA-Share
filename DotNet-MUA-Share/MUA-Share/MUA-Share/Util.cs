@@ -10,9 +10,10 @@ namespace MUA_Share
 {
     class Util
     {
+        public static string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
         public static ServerClient serverClient = null;
         public static string recieveLocation = @"C:\Users\"+
-            System.Security.Principal.WindowsIdentity.GetCurrent().Name+
+            userName.Substring(userName.IndexOf('\\'))+
             @"\Downloads\MUA-Share";
 
         public static void CreateServerClient(TextBox ip,TextBox port)
